@@ -88,6 +88,33 @@
                             </a>
                         </div>
                     </div>
+        <!-- TODO Dettagli offerta-->
+                    <div class="container p-3 bg-light m-2 my_border-rad border " >
+                        <div class="row pb-1">
+                            <div class="col my_fontBold">Dettagli della tua richiesta</div>
+                            
+                        </div>
+                        <div class="row">
+                            <div class="col"> <span class="my_fontBold">Id spedizione:</span> {{object.ids}} </div>
+                            <div class="col"> <span class="my_fontBold">Pallet:</span> {{object.pallet}} </div>
+                            <div class="col"> <span class="my_fontBold">Qta:</span> {{object.qta}} </div>
+                            <div class="col"> <span class="my_fontBold">Servizi aggiuntivi richiesti:</span>
+                            <div class="text-secondary">{{object.additionalServ}}</div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-3"> <span class="my_fontBold">Il tuo messaggio per il trasportatore:</span> 
+                                <div class="text-secondary">{{object.messageForT}}</div>  
+                            </div>
+                            <div class="col"> <span class="my_fontBold">Dotazione mezzo:</span> {{object.equipmentTr}} </div>
+                        </div>
+                        <div class="row pt-4">
+                            <div class="col-12"> <span class="my_fontBold">Contenuto:</span> {{object.content}} </div>
+                            <div class="col"> <span class="my_fontBold">Valore:</span> {{object.value}} </div>
+                        </div>
+                        </div>
+                        
+                    </div>
                 </div>
               </div>
         </main>

@@ -10,6 +10,18 @@ var app = new Vue({
             qta: '1',
             offer: 'Nessuna offerta ricevuta',
             deadline: 'Scade il 24/10/2022 alle 0:00',
+            ids: 'ffc78c0b',
+            messageForT: 'Nessun messaggio',
+            content: 'Merce generica',
+            value: '€',
+            equipmentTr: 'Sponda idraulica Alza/Abbassa',
+            additionalServ: 'Nessuno',
           }
-    }
+    },
+    /* methods: {
+        offerCounter: function () {
+          
+        }
+      },
+      */
 });
