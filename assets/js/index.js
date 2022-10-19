@@ -1,5 +1,6 @@
 var app = new Vue({ 
     el: '#app',
+   
     data: {
         object: {
             data: '14/10/2022',
@@ -16,12 +17,37 @@ var app = new Vue({
             value: '€',
             equipmentTr: 'Sponda idraulica Alza/Abbassa',
             additionalServ: 'Nessuno',
-          }
+          },
     },
-    /* methods: {
-        offerCounter: function () {
-          
+      methods: {
+        showDisplay() {
+            var element = document.getElementById("showDisp");
+            element.classList.toggle("d-none");
+        },
+        minuteCounter: function(){
+          var count = 60;
+          setInterval(function(){
+            count--;
+            var element = document.getElementById("minCount").innerHTML = count;
+            if( count == 0){
+              count = 60;
+            }
+          }, 60000)
+        },
+        secondCounter: function(){
+          var count = 60;
+          setInterval(function(){
+            count--;
+            var element = document.getElementById("secCount").innerHTML = count;
+            if( count == 0){
+              count = 60;
+            }
+          }, 1000)
         }
+        
       },
-      */
+      mounted: function() {
+        this.minuteCounter(),
+        this.secondCounter()
+      },
 });
