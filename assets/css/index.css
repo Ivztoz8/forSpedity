@@ -1,11 +1,33 @@
-/* My classes */
+/* My classes index.html*/
 .my_logosize{
+    position: relative;
     width: 20%;
     height: auto;
 }
 
+.my_logo:hover ~ .banner {
+    display: inline-block;
+    position: absolute;
+    top: 6%;
+    left: 3%;
+    width: auto;
+    height: auto;
+    padding: 0.3%;
+    text-decoration: underline;
+}
+
+.banner{
+    display: none;
+    background-color: orange;
+    color: white;
+}
+
 .my_fontSmall{
     font-size: 0.8rem;
+}
+
+.my_fontSmall1{
+    font-size: 0.6rem;
 }
 
 .my_fontBold{
@@ -28,6 +50,61 @@
     width: 80px;
     height: 80px;
 }
+
+/* My classes pay.html*/
+
+.my_circle{
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    background-color: rgb(183, 183, 183);
+    border: 1px solid rgb(1, 181, 1);
+    border-radius: 50%;
+}
+
+.my_circle_full{
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    background-color: rgb(1, 181, 1);
+    border: 1px solid rgb(1, 181, 1);
+    border-radius: 50%;
+}
+
+.my_circle_empty{
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    background-color: rgb(228, 228, 228);
+    border: 1px solid rgb(228, 228, 228);
+    border-radius: 50%;
+}
+
+.my_line{
+    display: inline-block;
+    width: 50px;
+    height: 1px;
+    border: 1px solid rgb(1, 181, 1);
+    
+}
+
+.my_line_empty{
+    display: inline-block;
+    width: 50px;
+    height: 1px;
+    border: 1px solid rgb(228, 228, 228);
+    
+}
+
+.my_payContainer{
+    display: flex;
+    width: 60%;
+    height: auto;
+    padding-top: 2%;
+    padding-left: 2%;
+    padding-bottom: 4%;
+}
+
 
 
 
