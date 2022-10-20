@@ -107,4 +107,11 @@
 
 
 
+div[class="col"] > div[class="row pe-3"]:hover > div {
+    
+    background-color: salmon;
+}
+
+
+
 
